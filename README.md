@@ -8,6 +8,8 @@ This repository contains Go programming lab assignments for NAPL.
 - `Lab 2/exp1/` - mathematical utility functions and user input
 - `Lab 2/exp2/` - collection management using slices and maps
 - `Lab 3/exp1/` - `Person` struct with associated methods
+- `Lab 4.go/exp6/` - concurrent tasks using goroutines and channels
+- `Lab 4.go/exp7/` - error handling with unit tests
 
 ## Requirements
 
@@ -46,3 +48,20 @@ go run ".\Lab 3\exp1\main.go"
 ```
 
 Lab 2 experiments use their own `go.mod` files. Lab 3 Experiment 1 is a standalone Go source file and does not require a module file.
+
+Run Lab 4 Experiment 6:
+
+```powershell
+go run ".\Lab 4.go\exp6"
+```
+
+Run Lab 4 Experiment 7 and its tests:
+
+```powershell
+Push-Location ".\Lab 4.go\exp7"
+go run .
+go test -v
+Pop-Location
+```
+
+Each Lab 4 experiment has its own `go.mod` file.
